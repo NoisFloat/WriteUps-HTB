@@ -81,7 +81,7 @@ Nmap done: 1 IP address (1 host up) scanned in 90.12 seconds
 ```
 <br>
 
-![Img1](/Sau/static/Img1.png)   <!-- sin la barra inicial -->
+![Img1](/WriteUps-HTB/Sau/static/Img1.png)
 
 
 ***Se identifico gracias el footer la version del servicio, que es vulnerable a SSRF - CVE-2023-27163:***
@@ -109,14 +109,14 @@ Una vez procesada la petición, el servidor se comporta como un proxy que permit
 
 > Ejemplo de explotación:
 
-![Img2](/Sau/static/Img2.png)
-![Img3](/Sau/static/Img3.png) 
+![Img2](/WriteUps-HTB/Sau/static/Img2.png)
+![Img3](/WriteUps-HTB/Sau/static/Img3.png) 
 
 Como puedes ver, ahora gracias a SSRF pude obtener un proxy a la maquina atacante a su puerto 80, que no esta disponible a acceso desde la ip externa que tiene la maquita victima.
 
 ***Ademas se identifico el uso de Meltrail 0.53, gracias a la respuesta obtenida del proxy***
 
-![Img4](/Sau/static/Img4.png)
+![Img4](/WriteUps-HTB/Sau/static/Img4.png)
 
 ---
 
@@ -124,7 +124,7 @@ Como puedes ver, ahora gracias a SSRF pude obtener un proxy a la maquina atacant
 
 [PoC de RCE - Meltrail 0.53](https://packetstorm.news/files/id/174129)
 
-![Img5](/Sau/static/Img5.png)
+![Img5](/WriteUps-HTB/Sau/static/Img5.png)
 
 ---
 
