@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sau - HTB</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- Librería Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div id="content" class="card"></div>
+
+  <script>
+    fetch("main.md")
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById("content").innerHTML = marked.parse(text);
+      })
+      .catch(err => {
+        document.getElementById("content").innerHTML = "<p>Error cargando Markdown.</p>";
+        console.error(err);
+      });
+  </script>
+
+</body>
+</html>
