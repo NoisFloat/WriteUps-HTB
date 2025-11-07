@@ -136,4 +136,4 @@ El ejecutable /usr/bin/systemctl 245 (245.4-4ubuntu3.22) es vulnerable a CVE-202
 
 
 
-![Privilege Scalation](/Sau/static/Img6.png)
+![Privilege Scalation](/WriteUps-HTB/Sau/static/Img6.png)
